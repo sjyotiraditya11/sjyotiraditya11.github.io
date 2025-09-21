@@ -133,3 +133,13 @@ footer {
   padding-left: 20px;
   list-style-type: disc;
 }
+
+.profile-photo {
+  width: 150px;        /* adjust size */
+  height: 150px;
+  border-radius: 50%;  /* makes it circular */
+  object-fit: cover;   /* keeps proper aspect ratio */
+  margin-bottom: 15px; /* space between photo and text */
+  border: 2px solid var(--header); /* optional: styled border */
+}
+
