@@ -1,28 +1,70 @@
-/* Default (light mode) colors */
+/* Light mode defaults */
 :root {
   --bg: #fdfdfd;
   --text: #333;
   --link: #007acc;
   --header: #2c3e50;
   --footer-bg: #f0f0f0;
+  --nav-bg: #ffffff;
+  --nav-border: #ddd;
 }
 
-/* Dark mode colors */
+/* Dark mode overrides */
 body.dark {
   --bg: #1e1e1e;
   --text: #e0e0e0;
   --link: #4ea1f3;
   --header: #f0f0f0;
   --footer-bg: #2c2c2c;
+  --nav-bg: #2c2c2c;
+  --nav-border: #444;
 }
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
   background: var(--bg);
   color: var(--text);
   transition: background 0.3s, color 0.3s;
+}
+
+/* Navigation bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--nav-bg);
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--nav-border);
+}
+
+.nav-left .logo {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--header);
+}
+
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--link);
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Dark mode toggle */
+#darkToggle {
+  background: none;
+  border: none;
+  font-size: 1.3em;
+  cursor: pointer;
+  color: var(--link);
 }
 
 .container {
@@ -34,50 +76,7 @@ body {
 
 header {
   text-align: center;
-  margin-bottom: 30px;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.2em;
-  color: var(--header);
-}
-
-header p {
-  margin: 5px 0 15px;
-  color: var(--text);
-}
-
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: var(--link);
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Dark mode toggle button */
-#darkToggle {
-  margin-top: 15px;
-  padding: 6px 12px;
-  font-size: 0.9em;
-  border: none;
-  border-radius: 5px;
-  background: var(--link);
-  color: white;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-#darkToggle:hover {
-  background: #005a99;
-}
-
-section {
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 
 h2 {
