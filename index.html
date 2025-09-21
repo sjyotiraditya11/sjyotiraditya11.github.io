@@ -87,29 +87,11 @@
       <p>Email2: <a href="mailto:ms21051@iisermohali.ac.in">ms21051@iisermohali.ac.in </a></p>
     </section>
  -->
-    <footer>
+<!--     <footer>
       <p> </p>
-    </footer>
+    </footer> -->
   </div>
-  <script>
-    const toggle = document.getElementById("darkToggle");
+  <script src="theme.js"></script>
 
-    // Load saved preference
-    if (localStorage.getItem("theme") === "dark") {
-      document.body.classList.add("dark");
-      toggle.textContent = "☀️";
-    }
-
-    toggle.addEventListener("click", () => {
-      document.body.classList.toggle("dark");
-      if (document.body.classList.contains("dark")) {
-        toggle.textContent = "☀️";
-        localStorage.setItem("theme", "dark");
-      } else {
-        toggle.textContent = "🌙";
-        localStorage.setItem("theme", "light");
-      }
-    });
-  </script>
 </body>
 </html>
