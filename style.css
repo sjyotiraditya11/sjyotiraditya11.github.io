@@ -93,3 +93,32 @@ footer {
   font-size: 0.9em;
   color: var(--text);
 }
+
+
+.cv-entry {
+  margin-bottom: 20px;
+}
+
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.05em;
+  margin-bottom: 5px;
+}
+
+.cv-title {
+  font-weight: bold;
+  color: var(--header);
+}
+
+.cv-type {
+  font-style: italic;
+  color: var(--text);
+}
+
+.cv-details {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
