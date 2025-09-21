@@ -143,3 +143,18 @@ footer {
   border: 2px solid var(--header); /* optional: styled border */
 }
 
+.download-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: var(--header);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #444; /* darker hover */
+}
+
